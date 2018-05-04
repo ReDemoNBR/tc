@@ -1,0 +1,33 @@
+<head>
+<style>
+table {
+  border: 1px solid black;
+}
+td {
+  width: 20px;
+  height: 20px;
+}
+td:nth-child(3n+4) {
+  border-left: 1px solid black;
+}
+tr:nth-child(3n+4)>td {
+  border-top: 1px solid black;
+}
+.red {
+  color: #F00;
+}
+</style>
+</head>
+<body>
+<!-- container -->
+<div>
+  <table id="init"></table>
+</div>
+<div>
+  <table id="result"></table>
+</div>
+<br>
+<input type="button" value="Generate initial Sudoku" onclick="generate()">
+<input type="button" value="Solve Sudoku" onclick="solve()">
+<script src="index.js"></script>
+</body>
