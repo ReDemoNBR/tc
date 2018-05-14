@@ -12,7 +12,7 @@ const rand = () => random() * SIZE >> 0;
 function generate(){
     console.time("generate sudoku");
     [table, subMatrix] = [Array.from(Array(SIZE), row=>Array.from(Array(SIZE))), sqrt(SIZE)];
-    let i = 15+random()*10>>0;
+    let i = 1+random()*20>>0;
     while (i--) {
         let randValue, randRow, randCol;
         // keep generating new pseudorandom rows, columns and values until the new value can be set
