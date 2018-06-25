@@ -15,6 +15,7 @@ function subset(p, n, c){
 function solve(){
     let t = subset(array, array.length, c);
     let tableElement = document.getElementById("t-matrix");
+    tableElement.innerHTML = "";
     t.forEach(row=>{
         let rowElement = tableElement.insertRow();
         row.forEach(value=>rowElement.insertCell().innerHTML = value);
